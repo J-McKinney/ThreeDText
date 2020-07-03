@@ -69,15 +69,16 @@
   position: absolute;
   top:0;
   left:0;
-  text-shadow: 0px 0px 50px rgba(11,124,199,0.5);
-  animation: cycle 10s linear infinite;
+  text-shadow: 0px 0px 50px rgba(11, 124, 199);
+  animation: cycle 5s linear infinite;
 }
 
 @keyframes cycle {
-  0% { text-shadow: 0px 0px 50px rgba(11,124,199,0.5);}
-  20% { text-shadow: 0px 0px 50px rgba(168,11,199,0.5);}
-  40% { text-shadow: 0px 0px 50px rgba(11,199,96,0.5);}
-  60% { text-shadow: 0px 0px 50px rgba(199,11,11,0.5);}
-  80% { text-shadow: 0px 0px 50px rgba(199,96,11,0.5);}
-  100% { text-shadow: 0px 0px 50px rgba(199, 149, 11, 0.5);}
+  0% { text-shadow: 0px 0px 50px rgb(11, 124, 199);}
+  16.6% { text-shadow: 0px 0px 50px rgb(168, 11, 199);}
+  33.2% { text-shadow: 0px 0px 50px rgb(11, 199, 96);}
+  49.8% { text-shadow: 0px 0px 50px rgba(199, 11, 11);}
+  66.4% { text-shadow: 0px 0px 50px rgba(199, 96, 11);}
+  83% { text-shadow: 0px 0px 50px rgba(199, 149, 11);}
+  100% { text-shadow: 0px 0px 50px rgba(11, 124, 199);}
 }
