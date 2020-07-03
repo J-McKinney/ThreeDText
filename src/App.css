@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-color: #868686;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -13,21 +19,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,8 +29,14 @@
 }
 
 .glowText {
+  /* -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: #bada55;
+  -webkit-text-stroke-width: 1px;  */
   position: relative;
-  color: rgb(207, 207, 207);
+  font-size: 48px;
+  font-family: dock11;
+  letter-spacing: 5px;
+  color:rgb(207,207,207);
   text-shadow: 
   /*3d layers*/
   0px 0px 1px rgb(167,167,167),
@@ -66,7 +63,21 @@
 
 .glowText::after {
   content: "Edit src/App.js and save to reload.";
+  font-size: 48px;
+  letter-spacing: 5px;
+  font-family: dock11;
   position: absolute;
   top:0;
   left:0;
+  text-shadow: 0px 0px 50px rgba(11,124,199,0.5);
+  animation: cycle 10s linear infinite;
+}
+
+@keyframes cycle {
+  0% { text-shadow: 0px 0px 50px rgba(11,124,199,0.5);}
+  20% { text-shadow: 0px 0px 50px rgba(168,11,199,0.5);}
+  40% { text-shadow: 0px 0px 50px rgba(11,199,96,0.5);}
+  60% { text-shadow: 0px 0px 50px rgba(199,11,11,0.5);}
+  80% { text-shadow: 0px 0px 50px rgba(199,96,11,0.5);}
+  100% { text-shadow: 0px 0px 50px rgba(199, 149, 11, 0.5);}
 }
